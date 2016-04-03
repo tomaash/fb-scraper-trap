@@ -1,0 +1,19 @@
+{
+  "name": "fb-scraper-trap",
+  "version": "0.0.1",
+  "description": "Experiment with fb scraper issues",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "author": "Tomas Holas",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^1.2.0",
+    "koa-static": "^2.0.0",
+    "koa-useragent": "^0.1.3"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}
