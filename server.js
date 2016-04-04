@@ -17,6 +17,9 @@ app.use(function * (next){
   var ms = new Date - start;
   console.log('%s %s - %s ms', this.method, this.url, ms);
   console.log("user-agent: " + this.headers['user-agent']);
+  if (this.status == 404) {
+  	this.body = undefined;
+  }
 });
 
 app.use(serve('static'));
